@@ -1,0 +1,7 @@
+1. grep -v '^#' story-plain.txt
+2. grep -v '^[[:space:]]*#' story-space.txt
+3. sed  's/[aeiouAEIOU]//g'
+4. grep '^[0-9]\{4\}-01-' numbers.log | wc -l
+5. grep -o '[0-9]\{3\}[ -]\?[0-9]\{3\}[ -]\?[0-9]\{4\}' phonebook.txt
+6. sed -E -i 's/\b\([0-9]{3}\)[ -]?([0-9]{3})[ -]?([0-9]{4})\b/(\1) \2-\3/' phonebook.txt
+
